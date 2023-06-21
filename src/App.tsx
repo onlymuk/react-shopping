@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Fashion from "./pages/fashion/Fashion";
 import Accessory from "./pages/Accessory/Accessory";
 import Digital from "./pages/digital/Digital";
-import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <>
@@ -17,7 +17,6 @@ function App() {
           <Route path="/digital" element={<Digital />} />
         </Routes>
       </Router>
-      <Footer />
     </>
   );
 }
