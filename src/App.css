@@ -1,0 +1,238 @@
+#root {
+  max-width: 1920px;
+  height: 1440px;
+
+  box-sizing: border-box;
+  text-align: center;
+}
+body{
+  margin: 0;
+  background-color: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+}
+input:focus, 
+input:hover{outline: none;} /* outline 테두리 없애기 */
+input {
+  box-shadow: none;
+
+font-size:1em;
+
+-webkit-appearance:none;
+
+-moz-appearance: none;
+
+-o-appearance:none;
+
+appearance: none;
+}
+
+.navbar{
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  top:0;
+  background: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  margin: 0;
+  padding: 8px;
+}
+
+.title{
+  font-size: 24px;
+  margin-left: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.me-auto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.light-mode .title{
+  color:black;
+}
+
+.detail1, .detail2, .detail3{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.light-mode .detail1, 
+.light-mode .detail2, 
+.light-mode .detail3{
+  color: black;
+}
+.detail1:hover, .detail3:hover, .detail2:hover {
+  background-color: rgba(192, 192, 192, 0.6); 
+  width: inherit;
+  border-radius: 8px;  
+  height: 30px;
+  display: inline-block; /* display 속성을 inline-block으로 변경 */
+  white-space: nowrap; /* 자동 줄바꿈 없애기 */
+}
+
+
+.input-ct {
+  background-color: hsla(var(--b1) / var(--tw-bg-opacity, 1));;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.light-mode .input-ct{
+  background-color: #fff;
+  color: black;
+}
+
+.sun, .moon{
+  width: 24px;
+  height: 24px;
+}
+
+.input {
+  background: #4b5563;
+  width: 100%;
+  height: 50px;
+}
+
+.light-mode .input{
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+}
+
+.light-mode .input:placeholder{
+  color: darkgray;
+}
+
+svg{
+  width: 24px;
+  height: 24px;
+}
+
+.c-area {
+  margin-top: 24px;
+  width: 1366px;
+  height: 700px;
+  overflow-y: visible;
+}
+
+.item-container {
+  margin: 40px 3px 0;
+  padding: 48px 8px 32px;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 20px;
+}
+
+.light-mode h2 {
+  background: #fff;
+  color:black;
+}
+
+.fashion, .accessory, .digital {
+  width: 1344px;
+  height: 478px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.light-mode .fashion, .light-mode .accessory, .light-mode .digital{
+  background: #fff;
+}
+.dark-mode .fashion, .dark-mode .accessory, .dark-mode .digital{
+  background: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+}
+
+.dark-mode {
+  --background-color: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+  --text-color: white;
+}
+
+.light-mode {
+  --background-color: white;
+  --text-color: black;
+}
+
+.light-mode body{
+  background: #fff;
+}
+
+.dark-mode .navbar {
+  background: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+  color: white;
+}
+
+.light-mode .navbar {
+  background: white;
+  color: black;
+}
+
+.light-mode .item-container{
+  background: white;
+}
+.dark-mode .item-container{
+  background: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+}
+
+
+
+
+
+
+
+.description {
+  width: 316px;
+  height: 156px;
+  padding: 32px;
+  background: #374151;
+  margin-left: 25px;
+  max-height: 204px;
+}
+
+
+
+.light-mode .description{
+  background: #f3f4f6;
+  color: black;
+}
+
+
+.d-title{
+  font-size: 16px;
+  font-weight: bold;
+  width: 248px;
+  max-height: 96px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+
+
+.d-price {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  width: 252px;
+  height: 24px;
+  text-align: left;
+}
+
+.ic-title{
+  font-size: 16px;
+  font-weight: 700;
+  width: 1344px;
+  height: 200px;
+}
